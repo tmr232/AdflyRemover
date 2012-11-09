@@ -1,0 +1,14 @@
+{
+  "name": "adf.ly Remover",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Removes adf.ly links from classcleff.com.",
+  "icons": {
+		"48":"icon.png"},
+  "content_scripts": [
+    {
+      "matches": ["http://www.classclef.com/*"],
+      "js": ["remover.js"]
+    }
+  ]
+}
